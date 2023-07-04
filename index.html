@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="./stylesheet.css">
+    <script src="./script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <main>
+    <section class="start-page hidden">
+        <button class="start-btn">Start</button>
+        <div class="clickEffect"></div>
+        <div class="clickEffect2"></div>
+    </section>
+
+    <section class="rules hidden">
+        <div class="rules-title">
+            <h1>Some Rules of this Quiz</h1>
+        </div>
+        <div class="rules-list">
+            <ol>
+                <li>You will have only <strong>15 seconds</strong> per each question.</li>
+                <li>Once you select your answer, it can't be undone.</li>
+                <li>you can't select any option once time goes off</li>
+                <li>You can't exit from Quiz while you're playing</li>
+                <li>You'll get points on the basis of your correct answer</li>
+            </ol>
+        </div>
+        <div class="rules-btn">
+            <button class="Exit-btn">Exit Quiz</button>
+            <button class="Continue-btn">Continue</button>
+        </div>
+    </section>
+    <section class="quiz-template hidden">
+        <div class="title-time">
+            <h1>Awsome Quiz Application</h1>
+            <div class="time">
+                <p>Time left</p>
+                <div class="time-box">0</div>
+            </div>
+        </div>
+
+        <div class="time-bar"></div>
+
+        <div class="question-choices">
+            <h2 class="question">1.What does HTML stand for?</h2>
+            <div class="multi-choices">
+                <div class="choice first-choice">
+                    <p>Hyper Text Preprocessor</p>
+                </div>
+                <div class="choice second-choice">
+                    <p>Hyper Text Preprocessor</p>
+                </div>
+                <div class="choice third-choice">
+                    <p>Hyper Text Preprocessor</p>
+                </div>
+                <div class="choice forth-choice">
+                    <p>Hyper Text Preprocessor</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="score">
+            <p>1 Of 5 Questions</p>
+            <button class="next-btn">Next Que</button>
+        </div>
+    </section>
+    <div class="rate-container fix-scroll">
+    <section class="rate hidden">
+        <div>
+            <i class="fa-sharp fa-solid fa-crown"></i>
+       </div>
+        <p>You've completed the Quiz !</p>
+        <p>and nice <i class="fa-solid fa-face-smile"></i>,You got 2 of 5</li></p>
+        <div class="rate-btns">
+            <button class="replay-btn">Replay Quiz</button>
+            <button class="Exit-btn-rate">Exit Quiz</button>
+        </div>
+    </section>
+</div>
+</main>
+</body>
+</html>
